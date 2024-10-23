@@ -11,5 +11,12 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
-
+  <!-- <Target Name="CopyStaticFilesToWWWRoot" BeforeTargets="Build">
+       <Copy      
+          SourceFiles="$(MSBuildThisFileDirectory)..\..\content\Scripts\js\Utility.js"
+         DestinationFiles="$(MSBuildProjectDirectory)\wwwroot\js\Utility.js"
+         Condition="!Exists('$(MSBuildProjectDirectory)\wwwroot\js\Utility.js')"
+        />
+  </Target>-->
+  
 </Project>
